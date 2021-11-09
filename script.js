@@ -5,7 +5,8 @@ if (nome == null || nome == "") {
 } else {
     text = `Olá ${nome}, seja bem-vindo(a)!`
 }
-alert(text)*/
+//alert(text)
+//document.write(text)*/
 
 /*
 var idade = 70

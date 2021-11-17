@@ -23,6 +23,10 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.481);
 
         }
+        div {
+            text-align: center;
+            padding: 8px;
+        }
         footer {
             color: white;
             text-align: center;
@@ -54,10 +58,10 @@
             var msg = window.document.getElementById('msg')
             var img = window.document.getElementById('imagem')
             var data = new Date()
-            //var hora = data.getHours()
-            var hora = 19
+            var hora = data.getHours()
+            //var hora = 12
             msg.innerHTML = `Agora são ${hora} horas.`
-            if (hora >= 0 && hora < 12) {
+            if (hora >= 6 && hora < 12) {
                 // Bom dia!
                 img.src = 'fotomanha.png'
                 document.body.style.background = '#FA9B1D'
@@ -68,11 +72,10 @@
             } else {
                 // Boa noite!
                 img.src = 'fotonoite.png'
+                document.body.style.background = '#0D1E34'
             }
         }
     </script>
-
-    <script src="script3.js"></script>
 
 </body>
 </html>

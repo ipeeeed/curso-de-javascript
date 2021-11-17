@@ -37,10 +37,10 @@
     </header>
     <main>
         <section>
-            <div>
+            <div id="msg">
                 Aqui a hora
             </div>
-            <div id="img">
+            <div id="foto">
                 <img id="imagem" src="fotomanha.png" alt="Foto do dia">
             </div>
         </section>
@@ -60,9 +60,11 @@
             if (hora >= 0 && hora < 12) {
                 // Bom dia!
                 img.src = 'fotomanha.png'
+                document.body.style.background = '#FA9B1D'
             } else if (hora >= 12 && hora <= 18) {
                 // Boa tarde!
                 img.src = 'fototarde.png'
+                document.body.style.background = '#9B7FB6'
             } else {
                 // Boa noite!
                 img.src = 'fotonoite.png'
@@ -70,7 +72,7 @@
         }
     </script>
 
-    <script src="script.js"></script>
+    <script src="script3.js"></script>
 
 </body>
 </html>

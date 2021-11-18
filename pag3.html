@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JarvisCrypton</title>
     <style>
         body {
             background-color: rgb(114, 152, 208);
@@ -59,13 +59,14 @@
             var img = window.document.getElementById('imagem')
             var data = new Date()
             var hora = data.getHours()
+            var minutos = data.getMinutes()
             //var hora = 12
-            msg.innerHTML = `Agora são ${hora} horas.`
-            if (hora >= 6 && hora < 12) {
+            msg.innerHTML = `Agora são ${hora} horas e ${minutos} minutos.`
+            if (hora >= 6 && hora < 15) {
                 // Bom dia!
                 img.src = 'fotomanha.png'
                 document.body.style.background = '#FA9B1D'
-            } else if (hora >= 12 && hora <= 18) {
+            } else if (hora >= 15 && hora <= 18) {
                 // Boa tarde!
                 img.src = 'fototarde.png'
                 document.body.style.background = '#9B7FB6'

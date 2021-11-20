@@ -38,10 +38,22 @@
         a {
             text-decoration: none;
         }
+        #turma {
+            background-color: wheat;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 500px;
+
+        }
+        .bolinha {
+            list-style-type: none;
+        }
         footer {
             background-color: var(--cor6);
         }
         marquee {
+            margin: 2px;
+            padding: 10px;
             color: yellow;
         }
         marquee:hover {
@@ -56,7 +68,7 @@
     <header>
         <h1>Título</h1>
         <nav>
-            <ul>
+            <ul class="bolinha">
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">teste?</a></li>
@@ -74,16 +86,16 @@
                 </aside>
             </article>
         </section>
-        <aside>
+        <aside id="turma">
             <h2>Lista</h2>
             <p>Usuários permitidos:</p>
-            <ul>
-                <li><a href="#">Ga</a></li>
-                <li><a href="#">Ka</a></li>
-                <li><a href="#">Ke</a></li>
-                <li><a href="#">Li</a></li>
-                <li><a href="#">Lu</a></li>
-                <li><a href="#">Pe</a></li>
+            <ul class="bolinha">
+                <li><a href="#">Gabriel</a></li>
+                <li><a href="#">Kare</a></li>
+                <li><a href="#">Kevelin</a></li>
+                <li><a href="#">Lidania</a></li>
+                <li><a href="#">Lucas</a></li>
+                <li><a href="#">Pedro</a></li>
             </ul>
         </aside>
     </main>

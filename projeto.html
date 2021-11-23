@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranger</title>
+    <title>Rangers</title>
+    <script>
+        senha = '5051';
+        //senhadig = prompt("Digite a senha","")
+        if (senha != senhadig){
+        top.location.href='erro.html';
+        }
+    </script>
     <style>
         @charset "UTF-8";
         @font-face {
@@ -35,15 +42,67 @@
         header {
             background-color: var(--cor6);
         }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        nav > ul > li {
+            padding: 10px 100px;
+            display: inline-block;
+        }
+        @media screen and (max-width: 1050px) {
+            nav > ul > li {
+                padding: 10px 50px;
+            }
+        }
+        @media screen and (max-width: 650px) {
+            nav > ul > li {
+                padding: 10px 20px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            nav > ul > li {
+                padding: 10px 10px;
+            }
+        }
         a {
             text-decoration: none;
         }
         #turma {
-            background-color: wheat;
+            background-color: var(--cor6);
+            border-radius: 5px;
+            box-shadow: 4px 3px 0px 0px rgba(23, 20, 46, 0.371);
             text-align: center;
             padding: 10px;
             margin: 10px 500px;
 
+        }
+        @media screen and (max-width: 1200px) {
+            #turma {
+                margin: 10px 400px;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            #turma {
+                margin: 10px 300px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            #turma {
+                margin: 10px 200px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            #turma {
+                margin: 10px 100px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            #turma {
+                margin: 10px 50px;
+            }
         }
         .bolinha {
             list-style-type: none;
@@ -91,7 +150,7 @@
             <p>Usuários permitidos:</p>
             <ul class="bolinha">
                 <li><a href="#">Gabriel</a></li>
-                <li><a href="#">Kare</a></li>
+                <li><a href="#">Karen</a></li>
                 <li><a href="#">Kevelin</a></li>
                 <li><a href="#">Lidania</a></li>
                 <li><a href="#">Lucas</a></li>
@@ -103,7 +162,7 @@
         <marquee behavior="" direction="left">Um baner em movimento. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam cupiditate delectus, minus saepe quam? Eius eaque temporibus similique ipsa vel doloremque libero, sint atque enim sequi, magni molestiae nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum ex blanditiis sequi eligendi minus vel facere laboriosam, corrupti, voluptatum dolor odit totam ullam culpa. Repellendus illum optio nesciunt deserunt?</marquee>
     </footer>
     <script>
-
+        
     </script>
 </body>
 </html>

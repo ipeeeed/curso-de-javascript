@@ -110,35 +110,11 @@
         footer {
             background-color: var(--cor6);
         }
-        span {
+        marquee:hover {
             color: yellow;
         }
-        span:hover {
+        marquee:active {
             color: orange;
-        }
-        span:active {
-            color: rgb(235, 82, 0);
-        }
-        #marquee {
-            width: 100px;
-            height: 20px;
-            overflow: hidden;
-            white-space: nowrap;
-            border: 1px;
-            padding: 3px 630px;
-        }
-        #marquee span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 20s linear infinite;
-        }
-        @keyframes marquee {
-            0% {
-                transform: translate(0, 0);
-        }
-            100% {
-                transform: translate(-100%, 0);
-            }
         }
     </style>
 </head>
@@ -156,11 +132,11 @@
     </header>
     <main>
         <section>
-            <h2>Titulinho</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores ipsa aliquam itaque laudantium accusantium tempore, id dolor est possimus maiores modi? A facilis at ipsam quisquam saepe nobis maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae nobis excepturi vitae eligendi voluptatibus, dolore dicta laboriosam est similique veritatis eos velit perspiciatis omnis qui? Delectus voluptas autem eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolor eaque ipsum. Perferendis, magnam at. Suscipit porro quasi, mollitia perferendis aliquid nobis ut, minus alias nemo optio fugit sapiente tenetur.</p>
+            <h2>Aviso!</h2>
+            <p>Este site encontra-se privado, apenas os nomes na lista receberão o link diretamente do criador. Pessoas que entrarem por qualquer outro meio não terão seu nome escrito ali.</p>
             <article>
-                <h3>Titulozinho</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ex sint ullam vitae architecto ipsa? Quibusdam quia mollitia tempore quisquam ipsam repellat atque repellendus expedita animi, debitis nemo aperiam saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat inventore reiciendis, dolore modi, delectus labore laudantium fugit recusandae debitis accusamus sint obcaecati eligendi, iure numquam deleniti nihil repudiandae laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quam vel quibusdam reprehenderit quo temporibus earum ipsam? Esse nihil doloremque obcaecati, nemo vitae iusto! Sit quod dolorum illum odit modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum illum consectetur voluptatibus quo consequatur. Aspernatur provident vel fugiat id recusandae? Aliquam deserunt quo facilis repudiandae quaerat iure animi omnis?</p>
+                <h3>Em obras...</h3>
+                <p>Este site está sendo construido para estudos (por enquanto), seja muito bem vindo(a) <span id="visitante">pessoa</span>, à este projeto.</p>
                 <aside>
                     <h3>Titulosinho2</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae error excepturi vitae tempore incidunt adipisci quos facere, voluptatibus nulla assumenda sed quo a ad aut aperiam rem voluptas neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam id soluta facere sit. Dicta, quisquam quod asperiores illum architecto commodi, expedita voluptatum natus possimus pariatur doloribus nobis voluptatem. Numquam?</p>
@@ -171,20 +147,22 @@
             <h2>Lista</h2>
             <p>Usuários permitidos:</p>
             <ul class="bolinha">
-                <li><a href="#">Gabriel</a></li>
-                <li><a href="#">Karen</a></li>
-                <li><a href="#">Kevelin</a></li>
-                <li><a href="#">Lidania</a></li>
-                <li><a href="#">Lucas</a></li>
-                <li><a href="#">Pedro</a></li>
+                <li><a href="https://www.instagram.com/gaeel_padilha/?hl=pt-br" target="_blank">Gabriel</a></li>
+                <li><a href="https://www.instagram.com/karennas/?hl=pt-br" target="_blank">Karen</a></li>
+                <li><a href="https://www.instagram.com/kevelinpereira/?hl=pt-br" target="_blank">Kevelin</a></li>
+                <li><a href="https://www.instagram.com/lidaniasilva/?hl=pt-br" target="_blank">Lidania</a></li>
+                <li><a href="https://www.instagram.com/nobrigalucas/?hl=pt-br" target="_blank">Lucas</a></li>
+                <li><a href="https://www.instagram.com/ipeeeed/?hl=pt-br" target="_blank">Pedro</a></li>
             </ul>
         </aside>
     </main>
     <footer>
-        <div id="marquee"><span>Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos</span></div>
+        <marquee behavior="" direction="left">Socorram-me, subi no ônibus em Marrocos. </marquee>
     </footer>
     <script>
-        
+        //var nome = window.prompt('Digite seu nome!')
+        window.document.getElementById('visitante')
+        visitante.innerHTML = nome
     </script>
 </body>
 </html>

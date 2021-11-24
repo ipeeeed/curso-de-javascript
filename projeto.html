@@ -8,7 +8,7 @@
     <script>
         senha = '5051';
         //senhadig = prompt("Digite a senha","")
-        if (senha != senhadig){
+        if (senha != senhadig) {
         top.location.href='erro.html';
         }
     </script>
@@ -110,16 +110,35 @@
         footer {
             background-color: var(--cor6);
         }
-        marquee {
-            margin: 2px;
-            padding: 10px;
+        span {
             color: yellow;
         }
-        marquee:hover {
-            color: darkorange;
+        span:hover {
+            color: orange;
         }
-        marquee:active {
-            color: rgb(225, 83, 17);
+        span:active {
+            color: rgb(235, 82, 0);
+        }
+        #marquee {
+            width: 100px;
+            height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 1px;
+            padding: 3px 630px;
+        }
+        #marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+        }
+            100% {
+                transform: translate(-100%, 0);
+            }
         }
     </style>
 </head>
@@ -138,10 +157,13 @@
     <main>
         <section>
             <h2>Titulinho</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores ipsa aliquam itaque laudantium accusantium tempore, id dolor est possimus maiores modi? A facilis at ipsam quisquam saepe nobis maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae nobis excepturi vitae eligendi voluptatibus, dolore dicta laboriosam est similique veritatis eos velit perspiciatis omnis qui? Delectus voluptas autem eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam dolor eaque ipsum. Perferendis, magnam at. Suscipit porro quasi, mollitia perferendis aliquid nobis ut, minus alias nemo optio fugit sapiente tenetur.</p>
             <article>
                 <h3>Titulozinho</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ex sint ullam vitae architecto ipsa? Quibusdam quia mollitia tempore quisquam ipsam repellat atque repellendus expedita animi, debitis nemo aperiam saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat inventore reiciendis, dolore modi, delectus labore laudantium fugit recusandae debitis accusamus sint obcaecati eligendi, iure numquam deleniti nihil repudiandae laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quam vel quibusdam reprehenderit quo temporibus earum ipsam? Esse nihil doloremque obcaecati, nemo vitae iusto! Sit quod dolorum illum odit modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum illum consectetur voluptatibus quo consequatur. Aspernatur provident vel fugiat id recusandae? Aliquam deserunt quo facilis repudiandae quaerat iure animi omnis?</p>
                 <aside>
                     <h3>Titulosinho2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae error excepturi vitae tempore incidunt adipisci quos facere, voluptatibus nulla assumenda sed quo a ad aut aperiam rem voluptas neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam id soluta facere sit. Dicta, quisquam quod asperiores illum architecto commodi, expedita voluptatum natus possimus pariatur doloribus nobis voluptatem. Numquam?</p>
                 </aside>
             </article>
         </section>
@@ -159,7 +181,7 @@
         </aside>
     </main>
     <footer>
-        <marquee behavior="" direction="left">Um baner em movimento. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam cupiditate delectus, minus saepe quam? Eius eaque temporibus similique ipsa vel doloremque libero, sint atque enim sequi, magni molestiae nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum ex blanditiis sequi eligendi minus vel facere laboriosam, corrupti, voluptatum dolor odit totam ullam culpa. Repellendus illum optio nesciunt deserunt?</marquee>
+        <div id="marquee"><span>Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos. Socorram-me, subi no ônibus em Marrocos</span></div>
     </footer>
     <script>
         

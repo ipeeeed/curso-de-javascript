@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <style>
+        body {
+            background-color: rgb(114, 152, 208);
+            font: normal 15pt Arial;
+        }
+        header {
+            color: white;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.481);
+
+        }
+        div {
+            text-align: center;
+            padding: 8px;
+        }
+        footer {
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
+        </div>
+        <div id="res"> <!-- res = resultado -->
+            Preparando a contagem
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Ipednudes</p>
+    </footer>
+    <script>
+        function contar() {
+            var ini = document.getElementById('txti')
+            var fim = document.getElementById('txtf')
+            var passo = document.getElementById('txtp')
+            var res = document.getElementById('res')
+
+            if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+                window.alert(' [ERRO] Faltam dados! ')
+                res.innerHTML = 'Impossível contar! '
+            } else {
+                res.innerHTML = 'Contando: <br>'
+                var i = Number(ini.value)
+                var f = Number(fim.value)
+                var p = Number(passo.value)
+                if (p <= 0) {
+                    window.alert('Passo inválido! Considerando passo 1')
+                    p = 1
+                }
+                if (i < f) {
+                    // Contagem crescente
+                    for(var c = i; c <= f; c +=p) {
+                    res.innerHTML += ` ${c}, `
+                    }
+                } else {
+                    // Contagem decrescente
+                    for(var c = i; c >= f; c -= p) {
+                        res.innerHTML += ` ${c}, `
+                    }
+                }
+                res.innerHTML += ' Acabou !'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/*var nome = prompt('Digite seu nome!')
+var nome = prompt('Digite seu nome!')
 var text
 if (nome == null || nome == "") {
     text = 'Olá pessoa, seja bem-vindo(a)!'
@@ -6,9 +6,9 @@ if (nome == null || nome == "") {
     text = `Olá ${nome}, seja bem-vindo(a)!`
 }
 //alert(text)
-//document.write(text)*/
+document.write(text)
 
-/*
+
 var idade = 70
 console.log(`Você tem ${idade} anos.`)
 if (idade < 16) {
@@ -17,9 +17,9 @@ if (idade < 16) {
     console.log('Seu voto é opcional')
 } else {
     console.log('Seu voto é obrigatório')
-}*/
+}
 
-/*
+
 var agora = new Date()
 var hora = agora.getHours()
 console.log(`Agora são exatamente ${hora} horas.`)
@@ -29,11 +29,11 @@ if (hora < 12) {
     console.log('Boa Tarde!')
 } else {
     console.log('Boa Noite!')
-} */
+}
 
-//var agora = new Date()
-//var diaSem = agora.getDay()
-/*
+var agora = new Date()
+var diaSem = agora.getDay()
+
     0 = Domingo
     1 = Segunda
     2 = Terça
@@ -41,9 +41,8 @@ if (hora < 12) {
     4 = Quinta
     5 = Sexta
     6 = Sábado
-*/
 
-/*
+
 switch(diaSem) {
     case 0:
         console.log('Domingo')
@@ -69,4 +68,4 @@ switch(diaSem) {
     default:
         console.log('Dia invalido!')
         break
-} */
+}
